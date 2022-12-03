@@ -263,6 +263,6 @@ EC.text_to_be_present_in_element((By.CLASS_NAME, "woocommerce-thankyou-order-rec
 # Проверяем, что в методе оплаты (Payment Method) отображается текст "Check Payments"
 Payment_Method = WebDriverWait(driver, 10).until(
 EC.text_to_be_present_in_element((By.CSS_SELECTOR, "tr:nth-child(3) > td"), "Check Payments"))
-# driver.quit()
+driver.quit()
 
 
